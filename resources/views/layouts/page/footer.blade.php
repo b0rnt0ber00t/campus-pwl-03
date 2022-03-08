@@ -37,13 +37,13 @@
                 <div class="footer-details">
                     <h4>explore</h4>
                     <ul class="list-unstyled footer-links">
-                        <li class="active"><a>Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="rooms.html">Rooms</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="#">Dinning</a></li>
-                        <li> <a href="news.html">News</a></li>
-                        <li> <a href="contact.html">Contact</a></li>
+                        <li class="{{ request()->path() == '/' ? 'active' : '' }}"> <a href="{{ url('/') }}">Home</a></li>
+                        <li class="{{ request()->path() == 'about' ? 'active' : '' }}"> <a href="{{ url('/about') }}">About</a></li>
+                        <li class="{{ request()->path() == 'rooms' ? 'active' : '' }}"> <a href="{{ url('/rooms') }}">Rooms</a></li>
+                        <li class="{{ request()->path() == 'gallery' ? 'active' : '' }}"> <a href="{{ url('/gallery') }}">Gallery</a></li>
+                        <li class="{{ request()->path() == 'dinning' ? 'active' : '' }}"> <a href="{{ url('/dinning') }}">Dinning</a></li>
+                        <li class="{{ request()->path() == 'news' ? 'active' : '' }}"> <a href="{{ url('/news') }}">News</a></li>
+                        <li class="{{ request()->path() == 'contact-us' ? 'active' : '' }}"> <a href="{{ url('/contact-us') }}">Contact</a></li>
                     </ul>
                 </div>
             </div>

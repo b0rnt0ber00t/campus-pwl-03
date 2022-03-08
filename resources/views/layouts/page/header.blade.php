@@ -48,7 +48,7 @@
                                 <li>
                                     <a data-hover="Gallery"
                                         class="{{ request()->path() == 'gallery' ? 'active' : '' }}"
-                                        href="{{ url('/galler') }}">
+                                        href="{{ url('/gallery') }}">
                                         <span>Gallery</span>
                                     </a>
                                 </li>

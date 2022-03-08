@@ -23,9 +23,12 @@ License URI: http://www.themevault.net/license/-->
         <link href="{{ asset('assets/css/responsive.css') }}" rel="stylesheet">
         <script src="{{ asset('assets/js/jquery.min.js') }}" type="text/javascript"></script>
         <script src="{{ asset('assets/js/bootstrap.min.js') }}" type="text/javascript"></script>
+        <script src="{{ asset('assets/js/jquery.imagesloaded.js') }}"></script>
+        <script src="{{ asset('assets/js/masonry.pkgd.min.js') }}"></script>
         <script src="{{ asset('assets/js/lightbox-plus-jquery.min.js') }}" type="text/javascript"></script>
         <script src="{{ asset('assets/js/instafeed.min.js') }}" type="text/javascript"></script>
         <script src="{{ asset('assets/js/custom.js') }}" type="text/javascript"></script>
+        @stack('head')
     </head>
     <body>
         <div id="page">
@@ -67,5 +70,6 @@ License URI: http://www.themevault.net/license/-->
             </a>
 
         </div>
+        @stack('script')
     </body>
 </html>
