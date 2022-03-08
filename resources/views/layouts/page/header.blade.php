@@ -24,13 +24,55 @@
                         </div>
                         <div class="collapse navigation navbar-collapse navbar-ex1-collapse remove-space">
                             <ul class="list-unstyled nav1 cl-effect-10">
-                                <li><a  data-hover="Home" class="active"><span>Home</span></a></li>
-                                <li><a data-hover="About"  href="about.html"><span>About</span></a></li>
-                                <li><a data-hover="Rooms"  href="rooms.html"><span>Rooms</span></a></li>
-                                <li><a data-hover="Gallery"  href="gallery.html"><span>Gallery</span></a></li>
-                                <li><a data-hover="Dinning" href="dinning.html"><span>Dinning</span></a></li>
-                                <li><a data-hover="News" href="news.html"><span>News</span></a></li>
-                                <li><a data-hover="Contact Us" href="contact.html"><span>contact Us</span></a></li>
+                                <li>
+                                    <a data-hover="Home"
+                                        class="{{ request()->path() == '/' ? 'active' : '' }}"
+                                        href="{{ url('/') }}">
+                                        <span>Home</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-hover="About"
+                                        class="{{ request()->path() == 'about' ? 'active' : '' }}"
+                                        href="{{ url('/about') }}">
+                                        <span>About</span>
+                                    </a>
+                                    </li>
+                                <li>
+                                    <a data-hover="Rooms"
+                                        class="{{ request()->path() == 'rooms' ? 'active' : '' }}"
+                                        href="{{ url('/rooms') }}">
+                                        <span>Rooms</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-hover="Gallery"
+                                        class="{{ request()->path() == 'gallery' ? 'active' : '' }}"
+                                        href="{{ url('/galler') }}">
+                                        <span>Gallery</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-hover="Dinning"
+                                        class="{{ request()->path() == 'dinning' ? 'active' : '' }}"
+                                        href="{{ url('/dinning') }}">
+                                        <span>Dinning</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-hover="News"
+                                        class="{{ request()->path() == 'news' ? 'active' : '' }}"
+                                        href="{{ url('/news') }}">
+                                        <span>News</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-hover="Contact Us"
+                                        class="{{ request()->path() == 'contact-us' ? 'active' : '' }}"
+                                        href="{{ url('/contact-us') }}">
+                                        <span>contact Us</span>
+                                    </a>
+                                </li>
                             </ul>
 
                         </div>

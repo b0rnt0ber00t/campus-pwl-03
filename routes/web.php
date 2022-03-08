@@ -13,9 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('page.index');
-});
+Route::view('/', 'page.index');
+Route::view('/about', 'page.about');
+Route::view('/rooms', 'page.rooms');
+Route::view('/galler', 'page.galler');
+Route::view('/dinning', 'page.dinning');
+Route::view('/news', 'page.news');
+Route::view('/contact-us', 'page.contact-us');
 
 Auth::routes();
 
